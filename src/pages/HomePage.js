@@ -1,11 +1,12 @@
 import React from 'react';
-import {Button} from "@heroui/react";
+import NavigationBar from "../components/NavigationBar";
+import Sections from "../components/Sections";
 
 const HomePage = () => {
     return (
         <div>
-            <p>Welcome to the Home Page!</p>
-            <Button color={"primary"}>Button</Button>
+            <NavigationBar />
+            <Sections />
         </div>
     );
 };
