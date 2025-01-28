@@ -7,16 +7,16 @@ import Contact from "../pages/Contact";
 const Sections = () => {
     return (
         <div> {/* Add padding to avoid overlap with the fixed navbar */}
-            <section id="HeroPage" className="h-screen flex items-center justify-center">
+            <section id="HeroPage" className="h-screen flex items-center justify-center bg-blue-950 ">
                 <HeroPage />
             </section>
-            <section id="AboutMe" className="h-screen  flex items-center justify-center">
+            <section id="AboutMe" className="h-screen  flex items-center justify-center bg-blue-950">
                 <AboutMe />
             </section>
-            <section id="Projects" className="h-screen  flex items-center justify-center">
+            <section id="Projects" className="h-screen  flex items-center justify-center bg-blue-950">
                 <Projects />
             </section>
-            <section id="Contact" className="h-screen  flex items-center justify-center">
+            <section id="Contact" className="h-screen  flex items-center justify-center bg-blue-950">
                 <Contact />
             </section>
         </div>

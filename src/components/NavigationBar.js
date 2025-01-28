@@ -28,30 +28,30 @@ const NavigationBar = () => {
     }, []);
 
     return (
-        <Navbar className="h-14 ">
+        <Navbar className="h-14 bg-blue-950"  >
             <NavbarBrand>
-                <p className="text-base  text-large">Pranavkumar Sailor</p>
+                <p className="text-base  text-large text-white">Pranavkumar Sailor</p>
             </NavbarBrand>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="end">
                 <NavbarItem isActive={activeSection === "HeroPage"}>
-                    <Link className={`text-large ${activeSection === "HeroPage" ? "text-blue-600" : "text-gray-600 hover:text-blue-500"}`} href="#HeroPage">
+                    <Link className={`text-large ${activeSection === "HeroPage" ? "text-white" : "text-white hover:text-white"}`} href="#HeroPage">
                         home
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={activeSection === "AboutMe"}>
-                    <Link className={`text-large ${activeSection === "AboutMe" ? "text-blue-600" : "text-gray-600 hover:text-blue-500"}`} href="#AboutMe">
+                    <Link className={`text-large ${activeSection === "AboutMe" ? "text-white" : "text-white hover:text-white"}`} href="#AboutMe">
                         about me
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={activeSection === "Projects"}>
-                    <Link className={`text-large ${activeSection === "Projects" ? "text-blue-600" : "text-gray-600 hover:text-blue-500"}`} href="#Projects">
-                        projects
+                    <Link className={`text-large ${activeSection === "Projects" ? "text-white" : "text-white hover:text-white"}`} href="#Projects">
+                        extended
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive={activeSection === "Contact"}>
-                    <Link className={`text-large ${activeSection === "Contact" ? "text-blue-600" : "text-gray-600 hover:text-blue-500"}`} href="#Contact">
-                        contact me
+                    <Link className={`text-large ${activeSection === "Contact" ? "text-white" : "text-white hover:text-white"}`} href="#Contact">
+                        projects
                     </Link>
                 </NavbarItem>
             </NavbarContent>
