@@ -8,7 +8,7 @@ import docker from "../assets/docker.svg";
 import aws from "../assets/aws.svg";
 import LI_Logo from "../assets/LI-Logo.png";
 import MY_PHOTO from "../assets/MY_PHOTO.JPEG";
-import Pranav_Resume from '../assets/PRANAV-RESUME-JAVA.pdf'
+import Pranav_Resume from '../assets/Pranav_Resume_Java.pdf'
 
 const HeroPage = () => {
     const linkedin = () => {
