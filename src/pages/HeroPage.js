@@ -31,7 +31,7 @@ const HeroPage = () => {
                     Hi, I’m <span className="text-blue-600 font-bold">Pranavkumar Sailor</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 max-w-2xl">
-                    I’m a Data Analyst with a background in software engineering, experienced in analyzing and visualizing data to support business decision-making. I continue to develop fullstack applications as a hobby, working with technologies like Java, JavaScript, Spring Boot, React, Docker, and AWS.
+                    I’m a Software Engineer with experience in developing and maintaining fullstack applications, working with technologies like Java, JavaScript, Spring Boot, React, Docker, and AWS.
                 </p>
 
                 {/* Icons */}
