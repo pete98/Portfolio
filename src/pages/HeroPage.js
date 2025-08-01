@@ -46,7 +46,10 @@ const HeroPage = () => {
 
                 {/* Buttons */}
                 <div className="flex items-center1 md:justify-start gap-4">
-                    <Button className="text-md font-bold bg-blue-600   text-white rounded-lg px-4 shadow-md shadow-gray-300 hover:bg-blue-700">
+                    <Button
+                        className="text-md font-bold bg-blue-600 text-white rounded-lg px-4 shadow-md shadow-gray-300 hover:bg-blue-700"
+                        onClick={downloadFile} // Attach the downloadFile function here
+                    >
                         Download CV
                     </Button>
                     <Button className="bg-white rounded-lg shadow-md shadow-gray-200 hover:bg-gray-100" onPress={()=> linkedin()}>
