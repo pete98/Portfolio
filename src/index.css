@@ -35,6 +35,43 @@ body {
   overflow: visible;
 }
 
+/* iOS Safari specific styling */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-color: #0f172a;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* Ensure the background extends to the safe area */
+  #app {
+    background: linear-gradient(to bottom right, #0f172a, #1e3a8a, #0f172a);
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Safari browser mode styling - better viewport usage */
+body {
+  background-color: #0f172a;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#app {
+  background: linear-gradient(to bottom right, #0f172a, #1e3a8a, #0f172a);
+  min-height: 100vh;
+  min-height: calc(100vh - 44px - 83px); /* Account for Safari bars */
+}
+
+/* Make content extend closer to Safari bars */
+#app {
+  margin-top: -20px;
+  padding-top: 20px;
+  margin-bottom: -20px;
+  padding-bottom: 20px;
+}
+
 /* Ensure no element creates scroll contexts */
 section, main, div {
   overflow: visible !important;
