@@ -2,9 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-behavior: smooth;
+/* Reset everything to basics */
+* {
+  box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
+html {
+  overflow-y: auto;
+}
 
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #0f172a;
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+#root {
+  height: 100%;
+  overflow: visible;
+}
+
+#app {
+  min-height: 100vh;
+  overflow: visible;
+}
+
+/* Ensure no element creates scroll contexts */
+section, main, div {
+  overflow: visible !important;
+}
